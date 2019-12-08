@@ -1,16 +1,5 @@
-#EurekaService配置
-server:
-  port: 9002
-  
-eureka:
-  instance:
-    hostname: localhost
+#EurekaServer 与 ConfigServer 相互独立（你不注册到我，我也不用你的配置）
 
-  client:
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-    fetch-registry: false
-    register-with-eureka: false
 ---
 #EurekaClient配置
 server:
@@ -24,7 +13,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:9001/eureka/
+      defaultZone: http://localhost:9002/eureka/
     register-with-eureka: true
 
 ---
@@ -39,7 +28,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:9001/eureka/
+      defaultZone: http://localhost:9002/eureka/
     register-with-eureka: true
 ---
 server: 
@@ -51,5 +40,5 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:9001/eureka/
+      defaultZone: http://localhost:9002/eureka/
     register-with-eureka: true
