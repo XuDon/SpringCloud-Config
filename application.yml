@@ -34,7 +34,7 @@ server:
 spring: 
   application: 
     name: ConfigServer
-  profiles: dev
+  profiles: ConfigServer
 eureka:
   client:
     serviceUrl:
