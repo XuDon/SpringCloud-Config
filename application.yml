@@ -3,7 +3,7 @@ spring:
     name: app1
   profiles: 
     activ: dev
-
+---
 spring: 
   application: 
     name: app2
