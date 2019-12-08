@@ -1,7 +1,9 @@
 
-  application: app1
+  application: 
+    name: app1
   profiles: dev
 
 
-  application: app2
+  application: 
+    name: app2
   profiles: test
