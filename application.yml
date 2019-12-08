@@ -2,11 +2,9 @@ server:
   port: 9004
 spring: 
   application: 
-    name: app1
+    name: devConfigClient
   profiles: dev
 eureka:
-  instance:
-    hostname: devConfigService
   client:
     serviceUrl:
       defaultZone: http://localhost:9001/eureka/
@@ -16,11 +14,9 @@ server:
  port: 9005
 spring: 
   application: 
-    name: app2
+    name: testConfigService
   profiles: test
 eureka:
-  instance:
-    hostname: testConfigService
   client:
     serviceUrl:
       defaultZone: http://localhost:9001/eureka/
