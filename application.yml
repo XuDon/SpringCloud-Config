@@ -1,11 +1,11 @@
-
-  dev_application: 
+spring: 
+  application: 
     name: app1
   profiles: 
     activ: dev
 
-
-  test_application: 
+spring: 
+  application: 
     name: app2
   profiles: 
     activ: test
