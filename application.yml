@@ -1,5 +1,7 @@
 spring:
-  application:
-    name: foo
-  profiles:
-    active: dev,mysql
+  application: app1
+  profiles: dev
+
+spring:
+  application: app2
+  profiles: test
