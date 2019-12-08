@@ -23,7 +23,7 @@ server:
   port: 9004
 spring: 
   application: 
-    name: devConfigClient
+    name: devConfig_Client
   profiles: dev
 eureka:
   client:
@@ -35,7 +35,7 @@ server:
  port: 9005
 spring: 
   application: 
-    name: testConfigClient
+    name: testConfig_Client
   profiles: test
 eureka:
   client:
