@@ -1,3 +1,20 @@
+#EurekaClient配置
+server:
+  port: 9002
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+    register-with-eureka: true
+
+spring:
+  application:
+    name: UserService_Client
+  profiles: UserService_Client
+
+---
+#ConfigClient两环境测试
 server: 
   port: 9004
 spring: 
@@ -14,7 +31,7 @@ server:
  port: 9005
 spring: 
   application: 
-    name: testConfigService
+    name: testConfigClient
   profiles: test
 eureka:
   client:
