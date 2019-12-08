@@ -1,9 +1,11 @@
 
   dev_application: 
     name: app1
-  profiles: dev
+  profiles: 
+    activ: dev
 
 
   test_application: 
     name: app2
-  profiles: test
+  profiles: 
+    activ: test
