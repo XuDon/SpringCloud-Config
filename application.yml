@@ -4,6 +4,13 @@ spring:
   application: 
     name: app1
   profiles: dev
+eureka:
+  instance:
+    hostname: devConfigService
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+    register-with-eureka: true
 ---
 server: 
  port: 9005
@@ -11,3 +18,10 @@ spring:
   application: 
     name: app2
   profiles: test
+eureka:
+  instance:
+    hostname: testConfigService
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+    register-with-eureka: true
