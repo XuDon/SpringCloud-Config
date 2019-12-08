@@ -29,8 +29,7 @@ eureka:
 
 ---
 #ConfigServer
-server:
-  port: 9003
+
 spring: 
   application: 
     name: ConfigServer
