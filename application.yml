@@ -1,7 +1,7 @@
-spring:
+
   application: app1
   profiles: dev
 
-spring:
+
   application: app2
   profiles: test
